@@ -10,6 +10,7 @@ from .models import CustomUser
 
 @api_view(['POST'])
 def login_user(request):
+    
     """Authenticate user using email and password."""
     email = request.data.get('email')
     password = request.data.get('password')
